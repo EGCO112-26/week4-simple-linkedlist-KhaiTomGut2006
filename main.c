@@ -16,11 +16,10 @@ int main(int argc, const char *argv[]) {
 
   for (i = 1; i < argc; i += 2) {
     if (i + 1 >= argc)
-      break; // Ensure there is a name pair
-
+      break;
     struct node *newNode = (struct node *)malloc(sizeof(struct node));
     newNode->id = atoi(argv[i]);
-    newNode->name = (char *)argv[i + 1]; // Use the pointer directly from argv
+    newNode->name = (char *)argv[i + 1];
     newNode->next = NULL;
 
     if (head == NULL) {
