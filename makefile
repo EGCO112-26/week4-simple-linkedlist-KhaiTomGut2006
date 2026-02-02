@@ -1,8 +1,8 @@
 compile: main.c 
-	 gcc main.c -o test
+	gcc main.c -o test
 
 run: test
-	 ./test
+	./test
 
-clean:
-	 rm test
+clean: 
+	rm test
